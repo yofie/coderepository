@@ -20,7 +20,8 @@ public class ItemController{
 		itemInfo.setItemDescription(itemDescription);
 		itemInfo.setItemPrice(itemPrice);
 		itemInfo.setItemQuantity(itemQuantity);
-
+		
+		
 		return itemInfo;
 	}
 
