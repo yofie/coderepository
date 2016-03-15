@@ -1,5 +1,4 @@
-/*!
- * @author: Jonathan Leijendekker
+/**
  * @author: Allan Queddeng
  */
 
@@ -9,13 +8,10 @@ var googlemap = {
 
 $(function() {
 
-//	$("#SearchForm [type=reset]").click(function(e) {
-//		e.preventDefault();
-//		$("#SearchForm").find($("[name]")).each(function() {
-//			$(this).val("");
-//		});
-//	});
 //	runDateTimePickers();	
+	$("#loginmodal").click(function(){
+		$("#Login_Modal").modal('show');	
+	});
 });
 
 function showLogin() {
@@ -33,8 +29,9 @@ function runDateTimePickers(){
 		orientation: 'auto left'
 	});
 	
+	/**
 	$('#AppointmentStart').timepicker({ 'scrollDefault': 'now' });
-	$('#AppointmentEnd').timepicker({ 'scrollDefault': 'now' });
+	$('#AppointmentEnd').timepicker({ 'scrollDefault': 'now' }); */
 }
 
 function validateLogin() {

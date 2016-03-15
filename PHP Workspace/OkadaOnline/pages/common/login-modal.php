@@ -3,7 +3,7 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove-sign"></span></button>
 					<h4 class="modal-title">Login</h4>
 				</div>
 				<div id="Login_Modal_Content">
@@ -13,21 +13,18 @@
 								<form id="validateLogin" method="POST" action="#">
 									<table>
 										<tr>
-											<td>Username:</td>
 											<td>
 												<input type="text" id="email" name="email" class="form-control" placeholder="Username">
 												<span></span>
 											</td>
 										</tr>
 										<tr>
-											<td>Password</td>
 											<td>
 												<input type="password" id="passwd" name="passwd" class="form-control" placeholder="Password" autocomplete="false">
-												<span></span>
 											</td>
 										</tr>
 										<tr>
-											<td colspan="2"><button type="button" class="btn" onclick="validateLogin()">Submit</button><input type="hidden" id="isvalid" value="<c:out value="${IsValid}"/>"/><input type="hidden" id="role" value="<c:out value="${UserInfo.role}"/>"/></td>
+											<td colspan="2"><button type="button" class="form-control" onclick="validateLogin()">Submit</button><input type="hidden" id="isvalid" value=""/><input type="hidden" id="role" value=""/></td>
 										</tr>
 									</table>
 								</form>
